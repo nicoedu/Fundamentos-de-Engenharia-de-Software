@@ -1,1 +1,3 @@
+Cada tela simboliza um conjunto de funções elementares e necessárias para o prototipo, com o avanço no sistema, a interface irá ser melhorada e estilizada, assim como implementada todas as funções básicas não demonstradas nesta prototipação de interface
+Link:
 https://marvelapp.com/271306c
