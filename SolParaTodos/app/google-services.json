@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "754613078200",
+    "firebase_url": "https://sol-para-todos-f3909.firebaseio.com",
+    "project_id": "sol-para-todos-f3909",
+    "storage_bucket": "sol-para-todos-f3909.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754613078200:android:0ecddcb2ec26926c",
+        "android_client_info": {
+          "package_name": "com.atividades.ufrpe.solparatodos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754613078200-hqob5di8676cb7p3eghi38vo3k5c3vok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atividades.ufrpe.solparatodos",
+            "certificate_hash": "1f708a6c25fcd9e7e8cb7f308fd98a3abf9def34"
+          }
+        },
+        {
+          "client_id": "754613078200-quha7l25se7uqdp22id5t5eatqc4cc06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfRQfJaRcD-oCwHEH4L1Sfs6M_pQHEiuU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754613078200-quha7l25se7uqdp22id5t5eatqc4cc06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
