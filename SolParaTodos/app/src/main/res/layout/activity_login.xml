@@ -2,53 +2,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.atividades.ufrpe.solparatodos.gui.LoginActivity">
 
     <Button
         android:id="@+id/btLogarId"
+        style="@style/botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btCadastroId"
+        android:layout_marginBottom="29dp"
         android:text="@string/action_sign_in_short"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="245dp"
-        android:layout_below="@+id/etSenhaId"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignRight="@+id/btCadastroId"
+        android:layout_alignEnd="@+id/btCadastroId"
+        android:layout_alignLeft="@+id/btCadastroId"
+        android:layout_alignStart="@+id/btCadastroId" />
 
     <Button
         android:id="@+id/btCadastroId"
+        style="@style/botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="53dp"
+        android:layout_marginBottom="67dp"
         android:text="@string/action_register"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="322dp"
-        android:layout_below="@+id/btLogarId"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/etEmailID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="85dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_above="@+id/etSenhaId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
 
     <EditText
         android:id="@+id/etSenhaId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/etEmailID"
-        android:layout_marginTop="25dp"
         android:hint="@string/prompt_password"
         android:inputType="textPassword"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/btLogarId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sol"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/etEmailID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

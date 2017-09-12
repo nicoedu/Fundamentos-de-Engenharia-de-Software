@@ -1,11 +1,9 @@
 package com.atividades.ufrpe.solparatodos.gui;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -60,7 +58,7 @@ public class WeatherActivity extends AppCompatActivity implements YahooWeatherIn
                 mWeatherInfosLayout.removeAllViews();
                 String _location = mEtAreaOfCity.getText().toString();
                 if (!TextUtils.isEmpty(_location)) {
-                    InputMethodManager imm = (InputMethodManager)getSystemService(
+                    InputMethodManager imm = (InputMethodManager) getSystemService(
                             Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(mEtAreaOfCity.getWindowToken(), 0);
                     searchByPlaceName(_location);
@@ -96,7 +94,6 @@ public class WeatherActivity extends AppCompatActivity implements YahooWeatherIn
 
     @Override
     public void gotWeatherInfo(final WeatherInfo weatherInfo, YahooWeather.ErrorType errorType) {
-        // TODO Auto-generated method stub
         hideProgressDialog();
         if (weatherInfo != null) {
             setNormalLayout();
@@ -126,7 +123,7 @@ public class WeatherActivity extends AppCompatActivity implements YahooWeatherIn
                         getLayoutInflater().inflate(R.layout.forecastinfo, null);
                 final TextView tvWeather = (TextView) forecastInfoLayout.findViewById(R.id.textview_forecast_info);
                 final WeatherInfo.ForecastInfo forecastInfo = weatherInfo.getForecastInfoList().get(i);
-                tvWeather.setText("====== FORECAST " + (i+1) + " ======" + "\n" +
+                tvWeather.setText("====== FORECAST " + (i + 1) + " ======" + "\n" +
                         "date: " + forecastInfo.getForecastDate() + "\n" +
                         "weather: " + forecastInfo.getForecastText() + "\n" +
                         "low  temperature in ºC: " + forecastInfo.getForecastTempLow() + "\n" +

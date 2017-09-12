@@ -4,53 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context="com.atividades.ufrpe.solparatodos.gui.PainelCadastroActivity"
     android:orientation="vertical"
     android:baselineAligned="false">
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/etNomeId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Marca" />
+        android:hint="Nome"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/etTamanhoID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Material" />
+        android:hint="Tamanho em m²"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/etAproveitamentoID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Tecnologia" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Tamanho" />
-
-    <EditText
-        android:id="@+id/editText14"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Aproveitamento" />
+        android:hint="Aproveitamento em %"
+        android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/botaoInserePainelId"
+        style="@style/botao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Cadastrar" />
 </LinearLayout>

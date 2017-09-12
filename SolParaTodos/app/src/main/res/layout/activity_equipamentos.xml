@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    tools:context="com.atividades.ufrpe.solparatodos.gui.EquipamentosActivity">
+
+    <EditText
+        android:id="@+id/etNomeEquipamentoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etConsumoEquipamentoId"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etConsumoEquipamentoId"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <EditText
+        android:id="@+id/etConsumoEquipamentoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Consumo em Watts"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="114dp"
+        android:layout_below="@+id/etNomeEquipamentoId"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:id="@+id/tvNomeEquipamentoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etNomeEquipamentoId"
+        android:layout_alignBottom="@+id/etNomeEquipamentoId"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Nome"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etConsumoEquipamentoId"
+        android:layout_alignBottom="@+id/etConsumoEquipamentoId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Consumo"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btInsereEquipamentoId"
+        android:layout_width="wrap_content"
+        style="@style/botao"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etConsumoEquipamentoId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:text="Cadastrar" />
+</RelativeLayout>

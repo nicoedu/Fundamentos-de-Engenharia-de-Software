@@ -13,8 +13,10 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -32,6 +34,31 @@
                 android:value=".gui.MainActivity" />
         </activity>
         <activity android:name=".gui.PainelCadastroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.PaineisActivity" />
+        </activity>
+        <activity android:name=".gui.PaineisActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.MainActivity" />
+        </activity>
+        <activity android:name=".gui.VariavelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.MainActivity" />
+        </activity>
+        <activity android:name=".gui.HouseControlActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.MainActivity" />
+        </activity>
+        <activity android:name=".gui.EquipamentosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gui.HouseControlActivity" />
+        </activity>
+        <activity android:name=".gui.SimulacaoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".gui.MainActivity" />

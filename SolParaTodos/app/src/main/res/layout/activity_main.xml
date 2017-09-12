@@ -3,41 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/back"
     android:layout_height="match_parent"
     tools:context="com.atividades.ufrpe.solparatodos.gui.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btTempoId"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp"
-        android:text="Bem Vindo"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"
+        android:text="BEM VINDO"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.321" />
 
-    <Button
-        android:id="@+id/btTempoId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Checar Tempo"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="231dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/ivSistemaID"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:maxHeight="42dp"
+        android:maxWidth="42dp"
+        android:src="@drawable/sistemas"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <Button
-        android:id="@+id/btCadastroPainelID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btTempoId"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="Cadastrar Painel" />
+    <ImageView
+        android:id="@+id/ivVariavelID"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/variaveis"
+        android:layout_alignTop="@+id/ivSistemaID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/ivEquipamentoID"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/equipamentos"
+        android:layout_below="@+id/ivVariavelID"
+        android:layout_alignLeft="@+id/ivSistemaID"
+        android:layout_alignStart="@+id/ivSistemaID"
+        android:layout_marginTop="23dp" />
+
+    <ImageView
+        android:id="@+id/ivSimuladorID"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/simulador"
+        android:layout_alignTop="@+id/ivEquipamentoID"
+        android:layout_alignLeft="@+id/ivVariavelID"
+        android:layout_alignStart="@+id/ivVariavelID" />
 
 </RelativeLayout>

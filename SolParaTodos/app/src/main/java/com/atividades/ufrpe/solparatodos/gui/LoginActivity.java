@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "Logado com sucesso", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "Tentativa de login falhou" + task.getException(), Toast.LENGTH_SHORT).show();
@@ -67,18 +67,18 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void cadastrar(){
+    private void cadastrar() {
         String email = etEmail.getText().toString();
         String senha = etSenha.getText().toString();
-        if (validaCampos(email,senha)){
-            firebaseAuth.createUserWithEmailAndPassword(email,senha).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+        if (validaCampos(email, senha)) {
+            firebaseAuth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
 
-                    if (task.isSuccessful()){
+                    if (task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
                         logar();
-                    }else{
+                    } else {
                         Toast.makeText(LoginActivity.this, "Falha no Cadastro" + task.getException(), Toast.LENGTH_SHORT).show();
                     }
                 }

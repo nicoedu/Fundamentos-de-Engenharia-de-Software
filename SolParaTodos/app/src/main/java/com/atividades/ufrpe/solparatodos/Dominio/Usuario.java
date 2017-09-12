@@ -7,6 +7,8 @@ package com.atividades.ufrpe.solparatodos.Dominio;
 public class Usuario {
 
     private String nome;
+    private String sobrenome;
+    private String email;
 
     public String getNome() {
         return nome;
@@ -32,10 +34,7 @@ public class Usuario {
         this.email = email;
     }
 
-    private String sobrenome;
-    private String email;
-
-    public Usuario(){
+    public Usuario() {
 
     }
 
